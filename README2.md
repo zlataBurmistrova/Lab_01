@@ -35,5 +35,6 @@ heap_sort — O(n log n) всегда, дополнительная память
 <img width="1076" height="956" alt="diagram alg 2 2" src="https://github.com/user-attachments/assets/f5b85cf2-3513-4c26-9d41-df6370d46af5" />
 
 ## коды
-[Uploading graph_algo.py…]()
-
+[graph_algo.py](https://github.com/user-attachments/files/26962537/graph_algo.py)
+[tree_algo.py](https://github.com/user-attachments/files/26962551/tree_algo.py)
+[main2alg.py](https://github.com/user-attachments/files/26962559/main2alg.py)
