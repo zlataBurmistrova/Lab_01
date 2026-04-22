@@ -29,9 +29,11 @@ heapify — O(log n) (спуск по высоте кучи).
 heap_sort — O(n log n) всегда, дополнительная память O(1) (сортировка на месте).
 
 ## Блок-схемы
-
 **алгоритм поиска компонент связности**
+<img width="1373" height="1135" alt="diagram alg 2 1" src="https://github.com/user-attachments/assets/33ef1a9c-49d1-4671-9144-9db622f2eafb" />
 **алгоритм Heap Sort**
+<img width="1076" height="956" alt="diagram alg 2 2" src="https://github.com/user-attachments/assets/f5b85cf2-3513-4c26-9d41-df6370d46af5" />
 
 ## коды
+[Uploading graph_algo.py…]()
 
