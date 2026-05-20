@@ -18,10 +18,11 @@
 
 ## Блок-схема  
 **Бинарный поиск**
-<img width="2556" height="2324" alt="image" src="https://github.com/user-attachments/assets/c6dddfdf-61e4-458f-8eb3-e1302141d062" />  
+<img width="931" height="678" alt="image" src="https://github.com/user-attachments/assets/4c862c95-6c76-45a1-b99f-e0156849d0a8" />
+  
 
 **сортировка пузырьком**  
-<img width="725" height="649" alt="Снимок экрана 2026-05-19 133842" src="https://github.com/user-attachments/assets/1fc1dd5a-8057-4b1e-8db6-95c008e269c9" />
+<img width="633" height="692" alt="image" src="https://github.com/user-attachments/assets/bc82d84b-4edb-4267-83b3-33a650644899" />
 
 **Код**  
 [lab_alg(3).py](https://github.com/user-attachments/files/28008453/lab_alg.3.py)
