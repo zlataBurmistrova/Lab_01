@@ -1,1 +1,44 @@
+# Задание task_03_01_03.
+#
+# Выполнил: Бурмистрова З.В.
+# Группа: ЦИБ-251
+def is_lucky(num):
+    """Является ли 'num' номером счастливого билета?
 
+    Параметры:
+        num: число для проверки
+
+    Результат:
+        bool: True - да, False - нет.
+    """
+    even_count = 0
+    odd_count = 0
+
+    for digit in str(num):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+    return even_count == odd_count
+
+
+def lucky_numbers(a, b):
+    """Вернуть список счастливых номеров от 'a' до 'b'.
+
+    Параметры:
+        a: начало диапазона
+        b: конец диапазона
+
+    Результат:
+        list: список счастливых чисел
+    """
+    result = []
+    for num in range(a, b + 1):
+        if is_lucky(num):
+            result.append(num)
+    return result
+
+a = int(input())
+b = int(input())
+print(' '.join(map(str, lucky_numbers(a, b))))
