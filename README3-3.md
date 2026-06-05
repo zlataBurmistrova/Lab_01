@@ -1,4 +1,4 @@
-Функция first_vacant_row(seats)
+## Функция first_vacant_row(seats)
 1. УСЛОВИЕ ЗАДАЧИ
 Цель функции: Найти первый ряд в зале, в котором имеется наибольшее количество свободных мест.
 Входные данные:
@@ -45,59 +45,11 @@ o	С > -> вернётся (1, 2) (верно, первый)
 •	С +1 -> вернётся (1, 2) (верно, нумерация с 1)
 
 КОД РЕШЕНИЯ
-# Задание task_03_03_03.
-#
-# Выполнил: Бурмистрова З.В.
-# Группа: ЦИБ-251
+[lab3.3.p.py](https://github.com/user-attachments/files/28634757/lab3.3.p.py)
 
-"""
-Ошибки (номера строк через пробел, данная строка - №2): 31 32
-(if available_seats_count >= max_count:
-            max_row = row_index)
-"""
+## демонстрация работы
+<img width="1526" height="846" alt="Снимок экрана 2026-06-05 133112" src="https://github.com/user-attachments/assets/0af74ec4-3422-4929-9d5b-af2ea2c043fb" />
+<img width="1366" height="752" alt="Снимок экрана 2026-06-05 133433" src="https://github.com/user-attachments/assets/af1c974f-a114-4cf4-9b15-da26fe3f12a8" />
 
-def first_vacant_row(seats):
-    """Вернуть первый ряд, в котором имеется больше всего
-    свободных мест и их количество.
-
-    Возвращаемая нумерация рядов с 1. Если свободных мест нет, вернуть 0, 0.
-
-    Параметры:
-        - seats (list of list): информация о проданных билетах
-                                (1 - продано, 0 - нет).
-    Результат:
-        - tuple (ряд, количество мест).
-    """
-    max_count = 0
-    max_row = 0
-    for row_index, row in enumerate(seats):
-        available_seats_count = row.count(0)  # 0 - пусто
-        if available_seats_count > max_count:          # исправлено: >= → >
-            max_row = row_index + 1                    # исправлено: +1 для нумерации с 1
-            max_count = available_seats_count
-
-    return max_row, max_count
-
-#демонстрация работы
-seats1 = [
-    [1, 1, 0, 1],   # ряд 1 — 1 свободное
-    [0, 0, 0, 1],   # ряд 2 — 3 свободных  ← максимум (первый)
-    [0, 0, 0, 1],   # ряд 3 — 3 свободных  (такой же, но не первый)
-    [1, 1, 1, 1],   # ряд 4 — 0 свободных
-]
-print(first_vacant_row(seats1)) #ожидание 2,3
-
-seats2 = [
-    [1, 1, 1],
-    [1, 1, 1],
-]
-result = first_vacant_row(seats2)
-print(result)  # Ожидаемый вывод: (0, 0)
-
-seats3 = [
-    [0, 1, 0],   # ряд 1: 2 свободных
-    [0, 1, 0],   # ряд 2: 2 свободных
-    [0, 1, 0],   # ряд 3: 2 свободных
-]
 result = first_vacant_row(seats3)
 print(result)  # Ожидаемый вывод: (1, 2)
