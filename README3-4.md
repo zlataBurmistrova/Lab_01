@@ -11,3 +11,4 @@
 
 <img width="1607" height="862" alt="Снимок экрана 2026-06-05 134209" src="https://github.com/user-attachments/assets/2d2e7f2c-07c5-4c7f-95ac-c831d5cfa93c" />
 
+<img width="1501" height="927" alt="image" src="https://github.com/user-attachments/assets/ea840061-aa67-483f-8922-ec1061df786d" />
